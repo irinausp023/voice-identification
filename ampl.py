@@ -40,11 +40,11 @@ def pre_proc(w):
     return samples
 
 #loading training data
-for filename in glob.glob("C:\\Users\\irina\\Desktop\\Kaggle\\voice\\train\\*.wav"):
+for filename in glob.glob("train\*.wav"):
     w = wave.open(filename, 'rb')
     wavs_train.append(pre_proc(w))
 #loading testing data
-for name in glob.glob("C:\\Users\\irina\\Desktop\\Kaggle\\voice\\test\\*.wav"):
+for name in glob.glob("C:test\*.wav"):
     w = wave.open(name, 'rb')
     wavs_test.append(pre_proc(w))  
 
